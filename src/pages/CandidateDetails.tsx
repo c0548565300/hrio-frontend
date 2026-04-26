@@ -233,7 +233,7 @@ export default function CandidateDetails() {
 
               <Button
                 type="submit"
-                variant="glow"
+                variant={"glow" as "solid"}
                 h="16"
                 fontSize="lg"
                 fontWeight="bold"
