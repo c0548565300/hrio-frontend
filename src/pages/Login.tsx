@@ -29,8 +29,8 @@ export default function Login() {
   };
 
   return (
-    <Box 
-      minH="100vh" 
+    <Box
+      minH="100vh"
       display="flex"
       alignItems="center"
       background="radial-gradient(at 0% 0%, {colors.brand.100} 0px, transparent 50%), radial-gradient(at 100% 100%, {colors.neon.cyan} 0px, transparent 50%)"
@@ -53,9 +53,9 @@ export default function Login() {
           >
             <VStack as="form" onSubmit={handleLogin} gap="8">
               <VStack gap="2" textAlign="center">
-                <Heading 
-                  size="3xl" 
-                  fontWeight="black" 
+                <Heading
+                  size="3xl"
+                  fontWeight="black"
                   letterSpacing="-0.06em"
                   color="brand.600"
                 >
@@ -99,7 +99,7 @@ export default function Login() {
 
               <Button
                 type="submit"
-                variant="glow"
+                variant={"glow" as "solid"} 
                 w="full"
                 h="14"
                 loading={isLoading}

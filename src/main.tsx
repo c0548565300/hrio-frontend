@@ -6,6 +6,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { system } from './theme';
 import App from './App.tsx';
 
+declare module "@chakra-ui/react" {
+  interface ButtonVariantMap {
+    variant: "solid" | "outline" | "subtle" | "surface" | "ghost" | "plain" | "glow"
+  }
+}
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {

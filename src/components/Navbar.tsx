@@ -39,25 +39,25 @@ export default function Navbar() {
       >
         <Container maxW="6xl">
           <Flex h="16" alignItems="center" justify="space-between">
-            
+
             <RouterLink to="/" style={{ textDecoration: 'none' }}>
-              <Text 
-                fontSize="2xl" 
-                fontWeight="black" 
+              <Text
+                fontSize="2xl"
+                fontWeight="black"
                 color="brand.900"
                 letterSpacing="-0.04em"
               >
                 HR<Box as="span" color="neon.cyan">.</Box>io
               </Text>
             </RouterLink>
-            
+
             <HStack gap="6">
               <Text fontSize="sm" color="gray.600" fontWeight="semibold" hideBelow="sm">
                 {currentUser.email}
               </Text>
-              <Button 
-                variant="glow" 
-                size="sm" 
+              <Button
+                variant={"glow" as "solid"} 
+                size="sm"
                 onClick={handleLogout}
               >
                 התנתק
